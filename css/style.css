@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.container {
+    width: 1280px;
+    padding: 0 15px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+header {
+    padding-top: 30px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+p {
+    font-weight: 400;
+    line-height: 28px;
+    hyphens: auto;
+}
+
+.header {
+    background-color: #f6f2f2;
+}
+
+.btn {
+    text-transform: capitalize;
+    border: 2px solid #ff2d2d;
+    border-radius: 5px;
+    padding: 15px 63px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/*_________________________________________________ BLOCK HEADER _________________________________________________*/
+.header .menu a {
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 30px 25px;
+}
+
+.header .menu__wrapper {
+    background: #313030;
+}
+
+.header .menu {
+    display: flex;
+    justify-content: center;
+}
+
+.header .menu .active a {
+    background-color: #ff3f40;
+}
+
+.header .menu a:hover {
+    background-color: #ff3f40;
+    transition: 0.4s;
+}
+
+/*_________________________________________________ BLOCK ABOUT _________________________________________________*/
+.about {
+    padding: 110px 0;
+    background-color: #f6f2f2;
+}
+
+.about .row {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.about .col {
+    width: 50%;
+}
+
+.about .about__title {
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 72px;
+    letter-spacing: 7px;
+    word-spacing: 10px;
+    margin-bottom: 35px;
+}
+
+.about .about__description {
+    max-width: 515px;
+    margin-bottom: 50px;
+}
+
+.about .about__button {
+    color: #ffffff;
+    background-color: #ff2d2d;
+}
+
+.about .about__button:hover {
+    color: #ff2d2d;
+    background: transparent;
+    transition: 0.4s;
+}
+
+.about .video__content {
+    width: 100%;
+}
+
+.about .video__content {
+    box-shadow: 0 0 40px rgba(0,0,0,0.5);
+}
+
+/*_________________________________________________ BLOCK SERVICES _________________________________________________*/
+.services {
+    padding-top: 110px;
+}
+
+.services .row {
+    display: flex;
+    border-bottom: 2px solid  #ececec;
+    padding-bottom: 60px;
+}
+
+.services .col {
+    width: 50%;
+}
+
+.services .services__title {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 55px;
+    color: #585858;
+    margin-bottom: 50px;
+}
+
+.services .services__description {
+    max-width: 515px;
+    margin-bottom: 60px;
+}
+
+.services .services__button {
+    color: #ff2d2d;
+    background-color: transparent;
+}
+
+.services .services__button:hover {
+    background: #ff2d2d;
+    color: #ffffff;
+    transition: 0.4s;
+}
+
+.services .element__title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #4c4c4c;
+}
+
+.services .services__elements-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services .services__element {
+    width: 50%;
+    box-sizing: border-box;
+    padding-bottom: 50px;
+}
+
+.services .icon {
+    width: auto;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.services .services-element__description {
+    padding-right: 20px;
+}
+
+/*_________________________________________________ BLOCK GALLERY _________________________________________________*/
+.gallery {
+    padding-top: 110px;
+    margin-bottom: 75px;
+}
+
+.gallery .gallery__title {
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #585858;
+    margin-bottom: 35px;
+}
+
+.gallery .gallery-title__description {
+    max-width: 510px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.red-line__small {
+    width: 130px;
+    height: 2px;
+    background-color: #ff2d2d;
+    margin: 0 auto 90px;
+}
+
+.gallery .gallery__menu a {
+    font-size: 22px;
+    font-weight: 700;
+    color: #4c4c4c;
+    text-transform: uppercase;
+    padding: 0 30px;
+}
+
+.gallery .gallery__menu .active a {
+    color: #ff3f40;
+}
+
+.gallery .gallery__menu a:hover {
+    color: #ff3f40;
+    transition: 0.4s;
+}
+
+.gallery .gallery__menu {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery .gallery__menu-wrapper {
+    margin-bottom: 65px;
+}
+
+.gallery .gallery__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.gallery .gallery__item {
+    width: calc(100%/4 - 20px*3/4);
+    height: 290px;
+    background-color: #f5f0dd;
+}
+
+/*_________________________________________________ BLOCK TEAM _________________________________________________*/
+.team {
+    padding-top: 75px;
+    margin-bottom: 110px;
+}
+
+.team .team__title {
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #585858;
+    margin-bottom: 45px;
+}
+
+.team .team-title__description {
+    max-width: 450px;
+    margin-bottom: 35px;
+}
+
+.team .red-line__small {
+    width: 130px;
+    height: 2px;
+    background-color: #ff2d2d;
+    display: inline-block;
+}
+
+.team .team-content__wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.team .element__main {
+    width: 30%;
+    max-height: 100%;
+    background-color: #f5f0dd;
+}
+
+.team .team__wrapper {
+    padding-left: 75px;
+    width: 70%;
+}
+
+.team .social-media {
+    display: flex;
+}
+
+.team .social-media li {
+    font-size: 18px;
+    color: #585858;
+    font-style: italic;
+    padding-right: 30px;
+}
+
+.team .social-media a {
+    color: #000000;
+}
+
+.team .social-media li:last-child {
+    padding-right: 0;
+}
+
+.team .social-media__wrapper {
+    margin-bottom: 65px;
+}
+
+.team .team-members__title {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #585858;
+    margin-bottom: 40px;
+}
+
+.team .team-members-title__description {
+    max-width: 630px;
+    margin-bottom: 40px;
+}
+
+.team .team-members__wrapper {
+    display: flex;
+    column-gap: 20px;
+}
+
+.team .team-member {
+    width: calc(100%/4 - 20px*3/4);
+    height: 200px;
+    background-color: #f5f0dd;
+}
+
+.team .team-member .popup {
+    display: none;
+}
+
+.team .team-member:hover .popup {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #7a786e;
+    cursor: pointer;
+    margin-top: 170px;
+    height: 30px;
+}
+
+/*_________________________________________________ BLOCK SUBSCRIBE _________________________________________________*/
+.subscribe {
+    background-color: #f5f0dd;
+}
+
+.subscribe .subscribe__title {
+    font-size: 42px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 2px;
+    padding-top: 140px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.subscribe .subscribe-title__description {
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.subscribe .subscribe-form {
+    padding-bottom: 140px;
+    text-align: center;
+}
+
+.subscribe .subscribe-form__input {
+    width: 516px;
+    height: 76px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    outline: none;
+    padding: 40px;
+    background-color: #ffffff;
+    margin-right: 20px;
+}
+
+.subscribe .subscribe-form__label {
+    font-size: 18px;
+    font-weight: 700;
+    width: 500px;
+    height: 76px;
+    color: #ffffff;
+    border: 2px solid #ff2d2d;
+    border-radius: 5px;
+    background-color: #ff2d2d;
+    outline: none;
+    padding: 28px 58px;
+    cursor: pointer;
+}
+
+.subscribe .subscribe-form__label:hover {
+    border: 2px solid #ff2d2d;
+    color: #ff2d2d;
+    background-color: #ffffff;
+    transition: 0.4s;
+}
+
+/*_________________________________________________ BLOCK CONTACT-TITLE _________________________________________________*/
+.contact-title {
+    padding-top: 110px;
+}
+
+.contact-title .contact-title__title {
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #585858;
+    margin-bottom: 45px;
+}
+
+.contact-title .contact-title__description {
+    max-width: 730px;
+    margin-bottom: 55px;
+}
+
+.contact-title .red-line__small {
+    width: 130px;
+    height: 2px;
+    background-color: #ff2d2d;
+    display: inline-block;
+    margin-bottom: 75px;
+}
+
+/*_________________________________________________ BLOCK CONTACT-FORM _________________________________________________*/
+.contact-form {
+    position: relative;
+    margin-bottom: 110px;
+}
+
+.contact-form .contact-content__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.contact-form .contact__form {
+    max-width: 60%;
+}
+
+.contact-form .contact-input__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 730px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.contact-form .contact__label {
+    display: none;
+}
+
+.contact-form .contact__input {
+    width: calc(50% - 25px);
+    border: 2px solid #e5e5e5;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    padding: 25px 50px;
+}
+
+.contact-form .contact__textarea {
+    width: 730px;
+    height: 250px;
+    border: 2px solid #e5e5e5;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    padding: 25px 50px;
+    resize: none;
+    margin-bottom: 50px;
+}
+
+.contact-form .contact__button {
+    width: 730px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #ff2d2d;
+    color: #ffffff;
+    border-radius: 10px;
+    border: 2px solid #ff2d2d;
+    padding: 25px 50px;
+}
+
+.contact-form .contact__button:hover {
+    border: 2px solid #ff2d2d;
+    color: #ff2d2d;
+    background-color: #ffffff;
+    transition: 0.4s;
+}
+
+.contact-form .contact__info {
+    background-color: #2d2d2d;
+    max-width: 100%;
+    z-index: 1;
+    margin-left: 100px;
+}
+
+.contact-form .contact__background {
+    background-color: #2d2d2d;
+    height: 100%;
+    width: calc((100% - 1130px)/2);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.contact-form .contact-info__title {
+    padding-top: 140px;
+    padding-left: 75px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.contact-form .contact__info p {
+    padding-left: 75px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/*_________________________________________________ BLOCK FOOTER _________________________________________________*/
+.footer {
+    background-color: #313030;
+}
+
+.footer .row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .copyright__text {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.footer .menu {
+    display: flex;
+    padding: 50px 100px;
+    column-gap: 20px;
+}
