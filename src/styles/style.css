@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
 
 body {
+    color: #000;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    color: #000000;
 }
 
 .container {
     width: 1280px;
+    height: 100%;
     padding: 0 15px;
     margin: 0 auto;
-    height: 100%;
 }
 
 header {
@@ -18,20 +18,20 @@ header {
 }
 
 ul {
-    list-style: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 a {
-    text-decoration: none;
     display: inline-block;
+    text-decoration: none;
 }
 
 p {
     font-weight: 400;
-    line-height: 28px;
     hyphens: auto;
+    line-height: 28px;
 }
 
 .header {
@@ -39,20 +39,20 @@ p {
 }
 
 .btn {
-    text-transform: capitalize;
+    padding: 15px 63px;
     border: 2px solid #ff2d2d;
     border-radius: 5px;
-    padding: 15px 63px;
     font-size: 18px;
     font-weight: 700;
+    text-transform: capitalize;
 }
 
-/*_________________________________________________ BLOCK HEADER _________________________________________________*/
+/* _________________________________________________ BLOCK HEADER _________________________________________________ */
 .header .menu a {
-    font-weight: 700;
-    color: #ffffff;
-    text-transform: uppercase;
     padding: 30px 25px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .header .menu__wrapper {
@@ -73,7 +73,7 @@ p {
     transition: 0.4s;
 }
 
-/*_________________________________________________ BLOCK ABOUT _________________________________________________*/
+/* _________________________________________________ BLOCK ABOUT _________________________________________________ */
 .about {
     padding: 110px 0;
     background-color: #f6f2f2;
@@ -81,8 +81,8 @@ p {
 
 .about .row {
     display: flex;
-    gap: 100px;
     align-items: center;
+    gap: 100px;
 }
 
 .about .col {
@@ -90,12 +90,12 @@ p {
 }
 
 .about .about__title {
+    margin-bottom: 35px;
     font-size: 60px;
     font-weight: 800;
-    line-height: 72px;
     letter-spacing: 7px;
+    line-height: 72px;
     word-spacing: 10px;
-    margin-bottom: 35px;
 }
 
 .about .about__description {
@@ -104,13 +104,13 @@ p {
 }
 
 .about .about__button {
-    color: #ffffff;
     background-color: #ff2d2d;
+    color: #fff;
 }
 
 .about .about__button:hover {
-    color: #ff2d2d;
     background: transparent;
+    color: #ff2d2d;
     transition: 0.4s;
 }
 
@@ -119,18 +119,18 @@ p {
 }
 
 .about .video__content {
-    box-shadow: 0 0 40px rgba(0,0,0,0.5);
+    box-shadow: 0 0 40px rgb(0 0 0 / 50%);
 }
 
-/*_________________________________________________ BLOCK SERVICES _________________________________________________*/
+/* _________________________________________________ BLOCK SERVICES _________________________________________________ */
 .services {
     padding-top: 110px;
 }
 
 .services .row {
     display: flex;
-    border-bottom: 2px solid  #ececec;
     padding-bottom: 60px;
+    border-bottom: 2px solid  #ececec;
 }
 
 .services .col {
@@ -138,11 +138,11 @@ p {
 }
 
 .services .services__title {
+    margin-bottom: 50px;
+    color: #585858;
     font-size: 42px;
     font-weight: 700;
     line-height: 55px;
-    color: #585858;
-    margin-bottom: 50px;
 }
 
 .services .services__description {
@@ -151,21 +151,21 @@ p {
 }
 
 .services .services__button {
-    color: #ff2d2d;
     background-color: transparent;
+    color: #ff2d2d;
 }
 
 .services .services__button:hover {
     background: #ff2d2d;
-    color: #ffffff;
+    color: #fff;
     transition: 0.4s;
 }
 
 .services .element__title {
-    font-size: 25px;
-    font-weight: 700;
     margin-bottom: 20px;
     color: #4c4c4c;
+    font-size: 25px;
+    font-weight: 700;
 }
 
 .services .services__elements-wrapper {
@@ -189,19 +189,19 @@ p {
     padding-right: 20px;
 }
 
-/*_________________________________________________ BLOCK GALLERY _________________________________________________*/
+/* _________________________________________________ BLOCK GALLERY _________________________________________________ */
 .gallery {
     padding-top: 110px;
     margin-bottom: 75px;
 }
 
 .gallery .gallery__title {
+    margin-bottom: 35px;
+    color: #585858;
     font-size: 42px;
     font-weight: 700;
-    text-transform: uppercase;
     text-align: center;
-    color: #585858;
-    margin-bottom: 35px;
+    text-transform: uppercase;
 }
 
 .gallery .gallery-title__description {
@@ -213,16 +213,16 @@ p {
 .red-line__small {
     width: 130px;
     height: 2px;
-    background-color: #ff2d2d;
     margin: 0 auto 90px;
+    background-color: #ff2d2d;
 }
 
 .gallery .gallery__menu a {
+    padding: 0 30px;
+    color: #4c4c4c;
     font-size: 22px;
     font-weight: 700;
-    color: #4c4c4c;
     text-transform: uppercase;
-    padding: 0 30px;
 }
 
 .gallery .gallery__menu .active a {
@@ -245,29 +245,29 @@ p {
 
 .gallery .gallery__wrapper {
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
     gap: 20px;
-    width: 100%;
 }
 
 .gallery .gallery__item {
-    width: calc(100%/4 - 20px*3/4);
+    width: calc(100%/ 4 - 20px* 3/ 4);
     height: 290px;
     background-color: #f5f0dd;
 }
 
-/*_________________________________________________ BLOCK TEAM _________________________________________________*/
+/* _________________________________________________ BLOCK TEAM _________________________________________________ */
 .team {
     padding-top: 75px;
     margin-bottom: 110px;
 }
 
 .team .team__title {
+    margin-bottom: 45px;
+    color: #585858;
     font-size: 42px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #585858;
-    margin-bottom: 45px;
 }
 
 .team .team-title__description {
@@ -276,10 +276,10 @@ p {
 }
 
 .team .red-line__small {
+    display: inline-block;
     width: 130px;
     height: 2px;
     background-color: #ff2d2d;
-    display: inline-block;
 }
 
 .team .team-content__wrapper {
@@ -294,8 +294,8 @@ p {
 }
 
 .team .team__wrapper {
-    padding-left: 75px;
     width: 70%;
+    padding-left: 75px;
 }
 
 .team .social-media {
@@ -303,14 +303,14 @@ p {
 }
 
 .team .social-media li {
-    font-size: 18px;
-    color: #585858;
-    font-style: italic;
     padding-right: 30px;
+    color: #585858;
+    font-size: 18px;
+    font-style: italic;
 }
 
 .team .social-media a {
-    color: #000000;
+    color: #000;
 }
 
 .team .social-media li:last-child {
@@ -322,11 +322,11 @@ p {
 }
 
 .team .team-members__title {
+    margin-bottom: 40px;
+    color: #585858;
     font-size: 30px;
     font-weight: 600;
     text-transform: uppercase;
-    color: #585858;
-    margin-bottom: 40px;
 }
 
 .team .team-members-title__description {
@@ -340,7 +340,7 @@ p {
 }
 
 .team .team-member {
-    width: calc(100%/4 - 20px*3/4);
+    width: calc(100%/ 4 - 20px* 3/ 4);
     height: 200px;
     background-color: #f5f0dd;
 }
@@ -351,38 +351,38 @@ p {
 
 .team .team-member:hover .popup {
     display: block;
-    text-align: center;
-    font-weight: 600;
-    font-size: 18px;
-    color: #ffffff;
-    text-transform: uppercase;
-    background-color: #7a786e;
-    cursor: pointer;
-    margin-top: 170px;
     height: 30px;
+    margin-top: 170px;
+    background-color: #7a786e;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-/*_________________________________________________ BLOCK SUBSCRIBE _________________________________________________*/
+/* _________________________________________________ BLOCK SUBSCRIBE _________________________________________________ */
 .subscribe {
     background-color: #f5f0dd;
 }
 
 .subscribe .subscribe__title {
-    font-size: 42px;
-    line-height: 24px;
-    font-weight: 700;
-    color: #ffffff;
-    letter-spacing: 2px;
     padding-top: 140px;
-    text-align: center;
     margin-bottom: 40px;
+    color: #fff;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 24px;
+    text-align: center;
 }
 
 .subscribe .subscribe-title__description {
-    font-weight: 400;
-    color: #ffffff;
-    text-align: center;
     margin-bottom: 60px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
 }
 
 .subscribe .subscribe-form {
@@ -393,46 +393,46 @@ p {
 .subscribe .subscribe-form__input {
     width: 516px;
     height: 76px;
-    border: 2px solid #ffffff;
+    padding: 40px;
+    border: 2px solid #fff;
+    margin-right: 20px;
+    background-color: #fff;
     border-radius: 5px;
     outline: none;
-    padding: 40px;
-    background-color: #ffffff;
-    margin-right: 20px;
 }
 
 .subscribe .subscribe-form__label {
-    font-size: 18px;
-    font-weight: 700;
     width: 500px;
     height: 76px;
-    color: #ffffff;
-    border: 2px solid #ff2d2d;
-    border-radius: 5px;
-    background-color: #ff2d2d;
-    outline: none;
     padding: 28px 58px;
+    border: 2px solid #ff2d2d;
+    background-color: #ff2d2d;
+    border-radius: 5px;
+    color: #fff;
     cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    outline: none;
 }
 
 .subscribe .subscribe-form__label:hover {
     border: 2px solid #ff2d2d;
+    background-color: #fff;
     color: #ff2d2d;
-    background-color: #ffffff;
     transition: 0.4s;
 }
 
-/*_________________________________________________ BLOCK CONTACT-TITLE _________________________________________________*/
+/* _________________________________________________ BLOCK CONTACT-TITLE _________________________________________________ */
 .contact-title {
     padding-top: 110px;
 }
 
 .contact-title .contact-title__title {
+    margin-bottom: 45px;
+    color: #585858;
     font-size: 42px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #585858;
-    margin-bottom: 45px;
 }
 
 .contact-title .contact-title__description {
@@ -441,14 +441,14 @@ p {
 }
 
 .contact-title .red-line__small {
+    display: inline-block;
     width: 130px;
     height: 2px;
-    background-color: #ff2d2d;
-    display: inline-block;
     margin-bottom: 75px;
+    background-color: #ff2d2d;
 }
 
-/*_________________________________________________ BLOCK CONTACT-FORM _________________________________________________*/
+/* _________________________________________________ BLOCK CONTACT-FORM _________________________________________________ */
 .contact-form {
     position: relative;
     margin-bottom: 110px;
@@ -456,8 +456,8 @@ p {
 
 .contact-form .contact-content__wrapper {
     display: flex;
-    flex-wrap: wrap;
     height: 100%;
+    flex-wrap: wrap;
 }
 
 .contact-form .contact__form {
@@ -466,9 +466,9 @@ p {
 
 .contact-form .contact-input__wrapper {
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
     max-width: 730px;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 50px;
 }
@@ -479,76 +479,76 @@ p {
 
 .contact-form .contact__input {
     width: calc(50% - 25px);
+    padding: 25px 50px;
     border: 2px solid #e5e5e5;
     background-color: #e5e5e5;
     border-radius: 10px;
-    padding: 25px 50px;
 }
 
 .contact-form .contact__textarea {
     width: 730px;
     height: 250px;
+    padding: 25px 50px;
     border: 2px solid #e5e5e5;
+    margin-bottom: 50px;
     background-color: #e5e5e5;
     border-radius: 10px;
-    padding: 25px 50px;
     resize: none;
-    margin-bottom: 50px;
 }
 
 .contact-form .contact__button {
     width: 730px;
-    text-transform: uppercase;
+    padding: 25px 50px;
+    border: 2px solid #ff2d2d;
+    background-color: #ff2d2d;
+    border-radius: 10px;
+    color: #fff;
     font-size: 18px;
     font-weight: 700;
-    background-color: #ff2d2d;
-    color: #ffffff;
-    border-radius: 10px;
-    border: 2px solid #ff2d2d;
-    padding: 25px 50px;
+    text-transform: uppercase;
 }
 
 .contact-form .contact__button:hover {
     border: 2px solid #ff2d2d;
+    background-color: #fff;
     color: #ff2d2d;
-    background-color: #ffffff;
     transition: 0.4s;
 }
 
 .contact-form .contact__info {
-    background-color: #2d2d2d;
-    max-width: 100%;
     z-index: 1;
+    max-width: 100%;
     margin-left: 100px;
+    background-color: #2d2d2d;
 }
 
 .contact-form .contact__background {
-    background-color: #2d2d2d;
-    height: 100%;
-    width: calc((100% - 1130px)/2);
     position: absolute;
+    z-index: 0;
     right: 0;
     bottom: 0;
-    z-index: 0;
+    width: calc((100% - 1130px)/ 2);
+    height: 100%;
+    background-color: #2d2d2d;
 }
 
 .contact-form .contact-info__title {
     padding-top: 140px;
     padding-left: 75px;
-    color: #ffffff;
+    margin-bottom: 40px;
+    color: #fff;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 40px;
 }
 
 .contact-form .contact__info p {
     padding-left: 75px;
-    font-weight: 400;
-    color: #ffffff;
     margin-bottom: 20px;
+    color: #fff;
+    font-weight: 400;
 }
 
-/*_________________________________________________ BLOCK FOOTER _________________________________________________*/
+/* _________________________________________________ BLOCK FOOTER _________________________________________________ */
 .footer {
     background-color: #313030;
 }
@@ -561,7 +561,7 @@ p {
 }
 
 .footer .copyright__text {
-    color: #ffffff;
+    color: #fff;
     font-weight: 600;
 }
 
