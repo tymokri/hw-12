@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Agency Landing Page</title>
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/style.css">
@@ -234,40 +236,34 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="contact-content__wrapper">
+                    <form class="contact__form">
 
-                        <form class="contact__form">
+                        <div class="contact-input__wrapper">
 
-                            <div class="contact-input__wrapper">
+                            <label class="contact__label" for="name"></label>
+                            <input class="contact__input" type="text" id="name" name="MSG"  placeholder="Name">
 
-                                <label class="contact__label" for="name"></label>
-                                <input class="contact__input" type="text" id="name" name="MSG"  placeholder="Name">
-
-                                <label class="contact__label" for="mail"></label>
-                                <input class="contact__input" type="text" id="mail" name="MSG"  placeholder="Your Mail">
-                            </div>
-
-                            <div>
-                                <label for="message"></label>
-                                <textarea class="contact__textarea" name="MSG"
-                                          id="message" placeholder="Type your message" cols="" rows=""></textarea>
-                            </div>
-
-                            <button class="contact__button">
-                                send message
-                            </button>
-
-                        </form>
-
-                        <div class="contact__info">
-                            <h3 class="contact-info__title">contact info</h3>
-                            <p>Jalalabad 24 / A, Ambaarkhana, Sylhet, <br> Bangladesh</p>
-                            <p></p>  <p>redwan@deviserweb.com</p>
-                            <p>(+88) 017 617 46373</p>
+                            <label class="contact__label" for="mail"></label>
+                            <input class="contact__input" type="text" id="mail" name="MSG"  placeholder="Your Mail">
                         </div>
 
-                        <div class="contact__background"></div>
+                        <div>
+                            <label for="message"></label>
+                            <textarea class="contact__textarea" name="MSG"
+                                      id="message" placeholder="Type your message" cols="" rows=""></textarea>
+                        </div>
 
+                        <button class="contact__button">
+                            send message
+                        </button>
+
+                    </form>
+
+                    <div class="contact__info">
+                        <h3 class="contact-info__title">contact info</h3>
+                        <p>Jalalabad 24 / A, Ambaarkhana, Sylhet, <br> Bangladesh</p>
+                        <p></p>  <p>redwan@deviserweb.com</p>
+                        <p>(+88) 017 617 46373</p>
                     </div>
 
                 </div>
