@@ -1,9 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
 
+:root {
+    --accent-color: #ff2d2d;
+    --main-bg: #313030;
+    --title-tx: #4c4c4c;
+    --complimentary-color-bg: #f6f2f2;
+    --black-color-tx: #000;
+    --white-color-tx: #fff;
+    --white-color-bg: #fff;
+    --light-color-bg: #f5f0dd;
+    --form-color-bg: #e5e5e5;
+
+    --font-sm: 12px;
+    --font-main: 16px;
+    --font-md: 18px;
+    --font-lg: 26px;
+    --font-xl: 42px;
+}
+
 body {
-    color: #000;
+    color: var(--black-color-tx);
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: var(--font-main);
 }
 
 .container {
@@ -29,14 +47,14 @@ p {
 }
 
 .header {
-    background-color: #f6f2f2;
+    background-color: var(--complimentary-color-bg);
 }
 
 .btn {
     padding: 15px 63px;
-    border: 2px solid #ff2d2d;
+    border: 2px solid var(--accent-color);
     border-radius: 5px;
-    font-size: 18px;
+    font-size: var(--font-md);
     font-weight: 700;
     text-transform: capitalize;
 }
@@ -44,13 +62,13 @@ p {
 /* _________________________________________________ BLOCK HEADER _________________________________________________ */
 .header .menu a {
     padding: 30px 25px;
-    color: #fff;
+    color: var(--white-color-tx);
     font-weight: 700;
     text-transform: uppercase;
 }
 
 .header .menu__wrapper {
-    background: #313030;
+    background: var(--main-bg);
 }
 
 .header .menu {
@@ -59,18 +77,18 @@ p {
 }
 
 .header .menu .active a {
-    background-color: #ff3f40;
+    background-color: var(--accent-color);
 }
 
 .header .menu a:hover {
-    background-color: #ff3f40;
+    background-color: var(--accent-color);
     transition: 0.4s;
 }
 
 /* _________________________________________________ BLOCK ABOUT _________________________________________________ */
 .about {
     padding: 110px 0;
-    background-color: #f6f2f2;
+    background-color: var(--complimentary-color-bg);
 }
 
 .about .row {
@@ -98,13 +116,13 @@ p {
 }
 
 .about .about__button {
-    background-color: #ff2d2d;
-    color: #fff;
+    background-color: var(--accent-color);
+    color: var(--white-color-tx);
 }
 
 .about .about__button:hover {
     background: transparent;
-    color: #ff2d2d;
+    color: var(--accent-color);
     transition: 0.4s;
 }
 
@@ -124,7 +142,7 @@ p {
 .services .row {
     display: flex;
     padding-bottom: 60px;
-    border-bottom: 2px solid  #ececec;
+    border-bottom: 2px solid var(--white-color-bg);
 }
 
 .services .col {
@@ -133,8 +151,8 @@ p {
 
 .services .services__title {
     margin-bottom: 50px;
-    color: #585858;
-    font-size: 42px;
+    color: var(--title-tx);
+    font-size: var(--font-xl);
     font-weight: 700;
     line-height: 55px;
 }
@@ -146,18 +164,18 @@ p {
 
 .services .services__button {
     background-color: transparent;
-    color: #ff2d2d;
+    color: var(--accent-color);
 }
 
 .services .services__button:hover {
-    background: #ff2d2d;
-    color: #fff;
+    background: var(--accent-color);
+    color: var(--white-color-tx);
     transition: 0.4s;
 }
 
 .services .element__title {
     margin-bottom: 20px;
-    color: #4c4c4c;
+    color: var(--title-tx);
     font-size: 25px;
     font-weight: 700;
 }
@@ -191,8 +209,8 @@ p {
 
 .gallery .gallery__title {
     margin-bottom: 35px;
-    color: #585858;
-    font-size: 42px;
+    color: var(--title-tx);
+    font-size: var(--font-xl);
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -208,23 +226,23 @@ p {
     width: 130px;
     height: 2px;
     margin: 0 auto 90px;
-    background-color: #ff2d2d;
+    background-color: var(--accent-color);
 }
 
 .gallery .gallery__menu a {
     padding: 0 30px;
-    color: #4c4c4c;
+    color: var(--title-tx);
     font-size: 22px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
 .gallery .gallery__menu .active a {
-    color: #ff3f40;
+    color: var(--accent-color);
 }
 
 .gallery .gallery__menu a:hover {
-    color: #ff3f40;
+    color: var(--accent-color);
     transition: 0.4s;
 }
 
@@ -247,7 +265,7 @@ p {
 .gallery .gallery__item {
     width: calc(100% / 4 - 20px * 3 / 4);
     height: 290px;
-    background-color: #f5f0dd;
+    background-color: var(--light-color-bg);
 }
 
 /* _________________________________________________ BLOCK TEAM _________________________________________________ */
@@ -258,8 +276,8 @@ p {
 
 .team .team__title {
     margin-bottom: 45px;
-    color: #585858;
-    font-size: 42px;
+    color: var(--title-tx);
+    font-size: var(--font-xl);
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -273,7 +291,7 @@ p {
     display: inline-block;
     width: 130px;
     height: 2px;
-    background-color: #ff2d2d;
+    background-color: var(--accent-color);
 }
 
 .team .team-content__wrapper {
@@ -284,7 +302,7 @@ p {
 .team .element__main {
     width: 30%;
     max-height: 100%;
-    background-color: #f5f0dd;
+    background-color: var(--light-color-bg);
 }
 
 .team .team__wrapper {
@@ -298,13 +316,13 @@ p {
 
 .team .social-media li {
     padding-right: 30px;
-    color: #585858;
-    font-size: 18px;
+    color: var(--title-tx);
+    font-size: var(--font-md);
     font-style: italic;
 }
 
 .team .social-media a {
-    color: #000;
+    color: var(--black-color-tx);
 }
 
 .team .social-media li:last-child {
@@ -317,7 +335,7 @@ p {
 
 .team .team-members__title {
     margin-bottom: 40px;
-    color: #585858;
+    color: var(--title-tx);
     font-size: 30px;
     font-weight: 600;
     text-transform: uppercase;
@@ -336,7 +354,7 @@ p {
 .team .team-member {
     width: calc(100% / 4 - 20px * 3 / 4);
     height: 200px;
-    background-color: #f5f0dd;
+    background-color: var(--light-color-bg);
 }
 
 .team .team-member .popup {
@@ -348,9 +366,9 @@ p {
     height: 30px;
     margin-top: 170px;
     background-color: #7a786e;
-    color: #fff;
+    color: var(--white-color-tx);
     cursor: pointer;
-    font-size: 18px;
+    font-size: var(--font-md);
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
@@ -358,14 +376,14 @@ p {
 
 /* _________________________________________________ BLOCK SUBSCRIBE _________________________________________________ */
 .subscribe {
-    background-color: #f5f0dd;
+    background-color: var(--light-color-bg);
 }
 
 .subscribe .subscribe__title {
     padding-top: 140px;
     margin-bottom: 40px;
-    color: #fff;
-    font-size: 42px;
+    color: var(--white-color-tx);
+    font-size: var(--font-xl);
     font-weight: 700;
     letter-spacing: 2px;
     line-height: 24px;
@@ -374,7 +392,7 @@ p {
 
 .subscribe .subscribe-title__description {
     margin-bottom: 60px;
-    color: #fff;
+    color: var(--white-color-tx);
     font-weight: 400;
     text-align: center;
 }
@@ -388,9 +406,9 @@ p {
     width: 516px;
     height: 76px;
     padding: 40px;
-    border: 2px solid #fff;
+    border: 2px solid var(--white-color-bg);
     margin-right: 20px;
-    background-color: #fff;
+    background-color: var(--white-color-bg);
     border-radius: 5px;
     outline: none;
 }
@@ -398,20 +416,20 @@ p {
 .subscribe .subscribe-form__label {
     height: 76px;
     padding: 28px 58px;
-    border: 2px solid #ff2d2d;
-    background-color: #ff2d2d;
+    border: 2px solid var(--accent-color);
+    background-color: var(--accent-color);
     border-radius: 5px;
-    color: #fff;
+    color: var(--white-color-tx);
     cursor: pointer;
-    font-size: 18px;
+    font-size: var(--font-md);
     font-weight: 700;
     outline: none;
 }
 
 .subscribe .subscribe-form__label:hover {
-    border: 2px solid #ff2d2d;
-    background-color: #fff;
-    color: #ff2d2d;
+    border: 2px solid var(--accent-color);
+    background-color: var(--white-color-bg);
+    color: var(--accent-color);
     transition: 0.4s;
 }
 
@@ -422,8 +440,8 @@ p {
 
 .contact-title .contact-title__title {
     margin-bottom: 45px;
-    color: #585858;
-    font-size: 42px;
+    color: var(--title-tx);
+    font-size: var(--font-xl);
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -438,7 +456,7 @@ p {
     width: 130px;
     height: 2px;
     margin-bottom: 75px;
-    background-color: #ff2d2d;
+    background-color: var(--accent-color);
 }
 
 /* _________________________________________________ BLOCK CONTACT-FORM _________________________________________________ */
@@ -474,8 +492,8 @@ p {
 .contact-form .contact__input {
     width: calc(50% - 25px);
     padding: 25px 50px;
-    border: 2px solid #e5e5e5;
-    background-color: #e5e5e5;
+    border: 2px solid var(--form-color-bg);
+    background-color: var(--form-color-bg);
     border-radius: 10px;
 }
 
@@ -483,9 +501,9 @@ p {
     width: 730px;
     height: 250px;
     padding: 25px 50px;
-    border: 2px solid #e5e5e5;
+    border: 2px solid var(--form-color-bg);
     margin-bottom: 50px;
-    background-color: #e5e5e5;
+    background-color: var(--form-color-bg);
     border-radius: 10px;
     resize: none;
 }
@@ -493,32 +511,32 @@ p {
 .contact-form .contact__button {
     width: 730px;
     padding: 25px 50px;
-    border: 2px solid #ff2d2d;
-    background-color: #ff2d2d;
+    border: 2px solid var(--accent-color);
+    background-color: var(--accent-color);
     border-radius: 10px;
-    color: #fff;
-    font-size: 18px;
+    color: var(--white-color-tx);
+    font-size: var(--font-md);
     font-weight: 700;
     text-transform: uppercase;
 }
 
 .contact-form .contact__button:hover {
-    border: 2px solid #ff2d2d;
-    background-color: #fff;
-    color: #ff2d2d;
+    border: 2px solid var(--accent-color);
+    background-color: var(--white-color-bg);
+    color: var(--accent-color);
     transition: 0.4s;
 }
 
 .contact-form .contact__info {
     width: 40%;
-    background-color: #2d2d2d;
+    background-color: var(--main-bg);
 }
 
 .contact-form .contact-info__title {
     padding-top: 140px;
     padding-left: 75px;
     margin-bottom: 40px;
-    color: #fff;
+    color: var(--white-color-tx);
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -526,7 +544,7 @@ p {
 .contact-form .contact__info p {
     padding-left: 75px;
     margin-bottom: 20px;
-    color: #fff;
+    color: var(--white-color-tx);
     font-weight: 400;
 }
 
@@ -536,13 +554,13 @@ p {
     display: block;
     width: 100vw;
     height: 100%;
-    background-color: #2d2d2d;
+    background-color: var(--main-bg);
     content: '';
 }
 
 /* _________________________________________________ BLOCK FOOTER _________________________________________________ */
 .footer {
-    background-color: #313030;
+    background-color: var(--main-bg);
 }
 
 .footer .row {
@@ -553,7 +571,7 @@ p {
 }
 
 .footer .copyright__text {
-    color: #fff;
+    color: var(--white-color-tx);
     font-weight: 600;
 }
 
@@ -819,7 +837,7 @@ p {
     }
 
     .footer .copyright__text {
-        font-size: 16px;
+        font-size: var(--font-main);
     }
 
     .footer .menu {
@@ -834,7 +852,7 @@ p {
     }
 
     body {
-        font-size: 18px;
+        font-size: var(--font-md);
     }
 
     header {
@@ -883,7 +901,7 @@ p {
     }
 
     .gallery .gallery__menu a {
-        font-size: 26px;
+        font-size: var(--font-lg);
     }
 
     .team {
@@ -909,9 +927,9 @@ p {
     }
 
     .team .element__main {
-        width: 100%;
-        height: 250px;
-        margin-bottom: 30px;
+        width: 50%;
+        height: 360px;
+        margin: 0 auto 20px;
     }
 
     .team .social-media__wrapper {
@@ -926,19 +944,19 @@ p {
     .team .social-media li {
         padding: 0;
         margin-bottom: 30px;
-        font-size: 26px;
+        font-size: var(--font-lg);
         font-weight: 600;
     }
 
     .team .team-members__wrapper {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         row-gap: 20px;
     }
 
     .team .team-member {
-        width: 100%;
-        height: 200px;
+        width: calc(100% / 2 - 20px * 1 / 2);
+        height: 300px;
     }
 
     .subscribe .subscribe-form__label {
@@ -975,11 +993,11 @@ p {
     }
 
     .footer .copyright__text {
-        font-size: 14px;
+        font-size: var(--font-sm);
     }
 }
 
-/* _______________________ MEDIA-BREAKPOINT-768px _______________________ */
+/* _______________________ MEDIA-BREAKPOINT-576px _______________________ */
 @media (max-width: 576px) {
     .container {
         max-width: 320px;
@@ -1014,6 +1032,18 @@ p {
         width: 100%;
     }
 
+    .team .element__main {
+        width: 100%;
+    }
+
+    .team .team-members__wrapper {
+        flex-direction: column;
+    }
+
+    .team .team-member {
+        width: 100%;
+    }
+
     .subscribe .subscribe__title {
         padding-top: 30px;
     }
@@ -1041,7 +1071,7 @@ p {
 
     .footer .copyright__text {
         padding-top: 20px;
-        font-size: 12px;
+        font-size: var(--font-sm);
         text-align: center;
     }
 
